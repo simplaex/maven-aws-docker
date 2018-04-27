@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT=rivr-maven-aws-docker
+PROJECT=maven-aws-docker
 REGION=us-east-1
 ACCOUNT=562949069997
 TAG="`date +%Y%m%d%H%M`.`git rev-parse HEAD`"
