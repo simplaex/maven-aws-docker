@@ -14,3 +14,7 @@ add-apt-repository \
    stable" && \
 apt-get update && \
 apt-get -y install docker-ce=18.03.1~ce-0~$(. /etc/os-release; echo "$ID")
+
+RUN curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+RUN chmod +x /usr/local/bin/docker-compose
+RUN apt-get install net-tools
